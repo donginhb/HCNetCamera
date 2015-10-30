@@ -1,0 +1,20 @@
+﻿生成启动时间为 2015/10/29 16:23:24。
+     1>项目“E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\RtpExampleClient\RtpExampleClient.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\jrtplib\jthread\include /ID:\jrtplib\jrtplib\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt client.cpp RTPSessionUtils.cpp
+         RTPSessionUtils.cpp
+         client.cpp
+         正在生成代码...
+       Link:
+         D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.lib" /MACHINE:X86 Debug\client.obj
+         Debug\RTPSessionUtils.obj
+     1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+     1>RTPSessionUtils.obj : error LNK2001: 无法解析的外部符号 "protected: virtual void __thiscall jrtplib::RTPSessionUtils::OnNewSource(class jrtplib::RTPSourceData *)" (?OnNewSource@RTPSessionUtils@jrtplib@@MAEXPAVRTPSourceData@2@@Z)
+     1>RTPSessionUtils.obj : error LNK2001: 无法解析的外部符号 "protected: virtual void __thiscall jrtplib::RTPSessionUtils::OnBYEPacket(class jrtplib::RTPSourceData *)" (?OnBYEPacket@RTPSessionUtils@jrtplib@@MAEXPAVRTPSourceData@2@@Z)
+     1>RTPSessionUtils.obj : error LNK2001: 无法解析的外部符号 "protected: virtual void __thiscall jrtplib::RTPSessionUtils::OnRemoveSource(class jrtplib::RTPSourceData *)" (?OnRemoveSource@RTPSessionUtils@jrtplib@@MAEXPAVRTPSourceData@2@@Z)
+     1>E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.exe : fatal error LNK1120: 3 个无法解析的外部命令
+     1>已完成生成项目“E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\RtpExampleClient\RtpExampleClient.vcxproj”(Rebuild 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.95
