@@ -1,20 +1,47 @@
-﻿生成启动时间为 2015/10/29 16:23:24。
-     1>项目“E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\RtpExampleClient\RtpExampleClient.vcxproj”在节点 2 上(Rebuild 个目标)。
+﻿生成启动时间为 2015/11/3 14:39:02。
+     1>项目“C:\Github working\HCNetCamera\RtpExampleClient\RtpExampleClient\RtpExampleClient.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
-         D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\jrtplib\jthread\include /ID:\jrtplib\jrtplib\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt client.cpp RTPSessionUtils.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\jrtplib\jthread\include /ID:\jrtplib\jrtplib\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt client.cpp RTPSessionUtils.cpp
          RTPSessionUtils.cpp
          client.cpp
          正在生成代码...
        Link:
-         D:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.lib" /MACHINE:X86 Debug\client.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Github working\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Github working\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Github working\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.lib" /MACHINE:X86 Debug\client.obj
          Debug\RTPSessionUtils.obj
      1>LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
-     1>RTPSessionUtils.obj : error LNK2001: 无法解析的外部符号 "protected: virtual void __thiscall jrtplib::RTPSessionUtils::OnNewSource(class jrtplib::RTPSourceData *)" (?OnNewSource@RTPSessionUtils@jrtplib@@MAEXPAVRTPSourceData@2@@Z)
-     1>RTPSessionUtils.obj : error LNK2001: 无法解析的外部符号 "protected: virtual void __thiscall jrtplib::RTPSessionUtils::OnBYEPacket(class jrtplib::RTPSourceData *)" (?OnBYEPacket@RTPSessionUtils@jrtplib@@MAEXPAVRTPSourceData@2@@Z)
-     1>RTPSessionUtils.obj : error LNK2001: 无法解析的外部符号 "protected: virtual void __thiscall jrtplib::RTPSessionUtils::OnRemoveSource(class jrtplib::RTPSourceData *)" (?OnRemoveSource@RTPSessionUtils@jrtplib@@MAEXPAVRTPSourceData@2@@Z)
-     1>E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.exe : fatal error LNK1120: 3 个无法解析的外部命令
-     1>已完成生成项目“E:\Herbert Project\GitHub Project\HCNetCamera\RtpExampleClient\RtpExampleClient\RtpExampleClient.vcxproj”(Rebuild 个目标)的操作 - 失败。
+     1>jrtplib_d.lib(rtcpapppacket.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcpapppacket.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtcpbyepacket.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcpbyepacket.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtcpcompoundpacket.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcpcompoundpacket.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtcpcompoundpacketbuilder.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcpcompoundpacketbuilder.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtcppacketbuilder.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcppacketbuilder.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtcprrpacket.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcprrpacket.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtcpscheduler.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcpscheduler.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtcpsdesinfo.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcpsdesinfo.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtcpsdespacket.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcpsdespacket.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtcpsrpacket.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtcpsrpacket.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpcollisionlist.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpcollisionlist.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtperrors.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtperrors.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpinternalsourcedata.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpinternalsourcedata.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpipv4address.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpipv4address.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpipv6address.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpipv6address.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtppacket.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtppacket.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtppacketbuilder.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtppacketbuilder.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtppollthread.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtppollthread.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtprandom.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtprandom.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtprandomrand48.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtprandomrand48.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtprandomrands.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtprandomrands.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpsession.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpsession.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpsessionparams.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpsessionparams.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpsessionsources.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpsessionsources.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpsourcedata.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpsourcedata.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpsources.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpsources.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtptimeutilities.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtptimeutilities.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpudpv4transmitter.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpudpv4transmitter.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpudpv6transmitter.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpudpv6transmitter.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+     1>jrtplib_d.lib(rtpexternaltransmitter.obj) : warning LNK4099: 未找到 PDB“vc110.pdb”(使用“jrtplib_d.lib(rtpexternaltransmitter.obj)”或在“C:\Github working\HCNetCamera\RtpExampleClient\Debug\vc110.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         RtpExampleClient.vcxproj -> C:\Github working\HCNetCamera\RtpExampleClient\Debug\RtpExampleClient.exe
+     1>已完成生成项目“C:\Github working\HCNetCamera\RtpExampleClient\RtpExampleClient\RtpExampleClient.vcxproj”(Rebuild 个目标)的操作。
 
-生成失败。
+生成成功。
 
-已用时间 00:00:02.95
+已用时间 00:00:09.07

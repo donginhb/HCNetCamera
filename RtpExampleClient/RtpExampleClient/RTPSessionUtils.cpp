@@ -51,7 +51,7 @@ namespace jrtplib
 			ip = addr->GetIP();
 			port = addr->GetPort();
 		}
-		else if (dat->GetRTCPDataAddress != 0)
+		else if (dat->GetRTCPDataAddress() != 0)
 		{
 			const RTPIPv4Address *addr = (const RTPIPv4Address *)(dat->GetRTCPDataAddress());
 			ip = addr->GetIP();
@@ -74,5 +74,48 @@ namespace jrtplib
 		std::cout << "OnNewSource Adding destination " << IPtoString(ip) << ";" << port << std::endl;
 	}
 
-	void RTPSessionUtils::
+	void RTPSessionUtils::OnRemoveSource(RTPSourceData *dat)
+	{
+		if (dat->ReceivedBYE())
+			return;
+
+		uint32_t ip;
+		uint16_t port;
+
+		if (GetAddrFromSource(dat, ip, port))
+			return;
+
+		RTPIPv4Address dest(ip ,port);
+		base_type::DeleteDestination(dest);
+
+		std::cout << "OnRemoveSource Deleting destination " << IPtoString(ip) << ";" << port << std::endl;
+	}
+
+	void RTPSessionUtils::OnBYEPacket(RTPSourceData *dat)
+	{
+		uint32_t ip;
+		uint16_t port;
+
+		if (GetAddrFromSource(dat, ip, port))
+			return;
+
+		RTPIPv4Address dest(ip, port);
+		base_type::DeleteDestination(dest);
+
+		std::cout << "OnBYEPacket Deleting destination " << IPtoString(ip) << ";" << port << std::endl; 
+	}
+
+	 //只要有rtp包就会触发  
+    void RTPSessionUtils::OnRTPPacket(RTPPacket *pack,const RTPTime &receivetime,  
+        const RTPAddress *senderaddress)  
+    {  
+        std::cout << "OnRTPPacket: data:" << pack->GetPayloadData() << std::endl;  
+    }
+
+	//收到rtcp包触发
+	void RTPSessionUtils::OnRTCPCompoundPacket(RTCPCompoundPacket *pack,const RTPTime &receivetime,  
+        const RTPAddress *senderaddress)  
+    {  
+        std::cout << "OnRTCPCompoundPacket: data:" << pack->GetCompoundPacketData() << std::endl;  
+    }  
 }

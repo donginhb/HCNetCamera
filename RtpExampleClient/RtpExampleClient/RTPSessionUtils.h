@@ -40,9 +40,9 @@ namespace jrtplib
 		void OnBYEPacket(RTPSourceData *dat);
 		void OnRemoveSource(RTPSourceData *dat);
 		void OnRTPPacket(RTPPacket *pack, const RTPTime &receivetime, 
-			const RTPAddress &senderaddress);
-		void OnSendRTCPCompoundPacket(RTCPCompoundPacket *pack, const RTPTime &receivetime,
-			const RTPAddress &senderaddress);
+			const RTPAddress *senderaddress);
+		void OnRTCPCompoundPacket(RTCPCompoundPacket *pack, const RTPTime &receivetime,
+			const RTPAddress *senderaddress);
 		void OnPollThreadStep(RTPSourceData *dat, uint32_t &ip, uint16_t &port);
 
 	private:
